@@ -1,6 +1,7 @@
 site_name: 折姜大学学生手册
 site_description: 折姜大学模拟器的用户手册+技术手册
 site_url: https://docs.67656.fun
+dev_addr: '127.0.0.1:8080'
 
 # 1. 导航菜单
 nav:
