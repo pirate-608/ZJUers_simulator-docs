@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main  # 指定触发分支
+
+permissions:
+  contents: write  # 允许写入 gh-pages 分支
 jobs:
   deploy:
     runs-on: ubuntu-latest
