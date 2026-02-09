@@ -76,6 +76,7 @@ theme:
     - search.highlight
   palette:
     primary: indigo
+  favicon: assets/images/favicon.png
 
 # 3. 插件（必需项！）
 plugins:
@@ -87,5 +88,6 @@ plugins:
 markdown_extensions:
   - admonition
   - codehilite
+  - pymdownx.tilde  # 支持删除线 ~~text~~
   - toc:
       permalink: true
