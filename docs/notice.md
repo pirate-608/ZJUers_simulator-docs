@@ -49,7 +49,7 @@
 
 [Azure OpenAI](https://portal.azure.com/)
 
-<h3 id="security-notice">安全须知</h3>
+### 安全须知 {#security-notice}
 
 1. 您提供的API_KEY仅用于您当前游戏会话，不会被永久保存。
 2. 填写即代表您单独同意我们为调用您指定模型而临时处理此密钥。

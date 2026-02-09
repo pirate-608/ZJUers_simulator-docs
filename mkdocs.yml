@@ -76,7 +76,8 @@ theme:
     - search.highlight
   palette:
     primary: indigo
-  favicon: assets/images/favicon.png
+  favicon: assets/images/favicon.ico
+  logo: assets/images/logo.png
 
 # 2.1 页脚备案信息
 extra:
@@ -92,6 +93,7 @@ plugins:
 markdown_extensions:
   - admonition
   - codehilite
+  - attr_list  # 允许在标题等处使用 {#id}
   - pymdownx.tilde  # 支持删除线 ~~text~~
   - toc:
       permalink: true
