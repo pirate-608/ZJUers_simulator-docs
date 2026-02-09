@@ -78,6 +78,10 @@ theme:
     primary: indigo
   favicon: assets/images/favicon.png
 
+# 2.1 页脚备案信息
+extra:
+  copyright: '<a href="http://beian.miit.gov.cn/" rel="noopener" target="_blank">浙ICP备2026007685号</a>'
+
 # 3. 插件（必需项！）
 plugins:
   - search  # 搜索插件
