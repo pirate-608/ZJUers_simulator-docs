@@ -1,0 +1,90 @@
+site_name: 折姜大学学生手册
+site_description: 折姜大学模拟器的详细使用指南和文档
+site_url: https://docs.67656.fun
+
+# 1. 导航菜单
+nav:
+  - 首页: index.md
+  - 折姜大学招生减章: notice.md
+  - 折姜大学校规: rules.md
+  - 游戏设定:
+    - 专业: world/majors.md
+    - 培养方案:
+      - 总览: world/courses.md
+      - TIER1:
+        - 计算机科学与技术: world/courses/TIER1/CS.md
+        - 人工智能: world/courses/TIER1/AI.md
+        - 软件工程: world/courses/TIER1/SE.md
+        - 临床医学（5+3）: world/courses/TIER1/MD.md
+        - 机器人工程: world/courses/TIER1/RE.md
+      - TIER2:
+        - 电气工程及其自动化: world/courses/TIER2/EEA.md
+        - 光电信息科学与工程: world/courses/TIER2/OE.md
+        - 自动化（控制）: world/courses/TIER2/AUT.md
+        - 微电子科学与工程: world/courses/TIER2/MISE.md
+        - 信息安全: world/courses/TIER2/IS.md
+        - 数学与应用数学: world/courses/TIER2/MAM.md
+        - 电子信息工程: world/courses/TIER2/EIE.md
+        - 电子科学与技术: world/courses/TIER2/EST.md
+        - 数字金融: world/courses/TIER2/DF.md
+      - TIER3:
+        - 机械工程: world/courses/TIER3/ME.md
+        - 物理学: world/courses/TIER3/PHY.md
+        - 能源与环境系统工程: world/courses/TIER3/NEE.md
+        - 口腔医学: world/courses/TIER3/DEN.md
+        - 飞行器设计与工程: world/courses/TIER3/ADE.md
+        - 建筑学: world/courses/TIER3/ARCH.md
+        - 化学工程与工艺: world/courses/TIER3/CHE.md
+        - 材料科学与工程: world/courses/TIER3/MSE.md
+        - 化学: world/courses/TIER3/CHEM.md
+        - 经济学: world/courses/TIER3/ECON.md
+        - 法学: world/courses/TIER3/LAW.md
+        - 药学: world/courses/TIER3/PHAR.md
+        - 生物医学工程: world/courses/TIER3/BME.md
+        - 工商管理: world/courses/TIER3/BA.md
+      - TIER4:
+        - 汉语言文学: world/courses/TIER4/CL.md
+        - 历史学: world/courses/TIER4/HIS.md
+        - 哲学: world/courses/TIER4/PHI.md
+        - 新闻学: world/courses/TIER4/JOUR.md
+        - 英语: world/courses/TIER4/ENG.md
+        - 农学: world/courses/TIER4/AGR.md
+        - 茶学: world/courses/TIER4/TEA.md
+        - 动物科学: world/courses/TIER4/AS.md
+        - 环境科学: world/courses/TIER4/ENV.md
+        - 心理学: world/courses/TIER4/PSY.md
+        - 社会学: world/courses/TIER4/SOC.md
+        - 地质学: world/courses/TIER4/GEO.md
+    - 角色: world/characters.md
+    - 成就: world/achievements.md
+    - 数值: world/game_balance.md
+    - 关键词: world/keywords.md
+  - 开发人员指南:
+    - 框架说明: dev/framework.md
+    - 开发环境搭建: dev/setup.md
+    - API文档: dev/api.md
+  - 常见问题: faq.md
+
+# 2. 主题与样式（推荐Material主题）
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+  palette:
+    primary: indigo
+
+# 3. 插件（必需项！）
+plugins:
+  - search  # 搜索插件
+  # 在本地预览时可启用此插件，但在GitHub Actions中会自动构建
+  # - mkdocs-material
+
+# 4. 扩展（Markdown增强）
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
