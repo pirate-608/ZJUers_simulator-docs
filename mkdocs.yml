@@ -5,9 +5,17 @@ dev_addr: '127.0.0.1:8080'
 
 # 1. 导航菜单
 nav:
-  - 首页: index.md
-  - 折姜大学招生减章: notice.md
-  - 折姜大学校规: rules.md
+  - 首页: 
+    - 快速开始: index.md
+    - 折姜大学招生减章: notice.md
+    - 折姜大学校规: rules.md
+  - 游戏预览: 
+    - 开始页面: preview/start.md
+    - 入学考试: preview/exam.md
+    - 录取通知书: preview/admission.md
+    - 主循环控制台: preview/dashboard.md
+    - 随机事件: preview/event.md
+    - 钉钉消息: preview/dingtalk.md
   - 游戏设定:
     - 专业: world/majors.md
     - 培养方案:
@@ -64,7 +72,9 @@ nav:
     - 框架说明: dev/framework.md
     - 开发环境搭建: dev/setup.md
     - API文档: dev/api.md
-  - 常见问题: faq.md
+  - 常见问题: 
+    - 玩家常见问题: faq.md
+    - 开发者常见问题: dev/faq_dev.md
 
 # 2. 主题与样式（推荐Material主题）
 theme:

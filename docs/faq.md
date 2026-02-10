@@ -43,8 +43,3 @@
   该网站主域名已备案，页脚展示备案号“浙ICP备2026007685号”并链接至工信部网站。
 - **隐私政策同意**
   如输入自定义 API Key，即视为同意平台隐私政策并授权本会话使用。
-
-## 部署/运维（简略）
-- **如何重启服务？** `docker compose up -d --build`
-- **数据库迁移？** `docker compose up -d migrate`（或手动 `alembic upgrade head`）
-- **查看日志？** `docker compose logs -f backend`
