@@ -2,6 +2,8 @@ site_name: 折姜大学学生手册
 site_description: 折姜大学模拟器的用户手册+技术手册
 site_url: https://docs.67656.fun
 dev_addr: '127.0.0.1:8080'
+repo_url: https://github.com/pirate-608/ZJUers_simulator
+repo_name: GitHub
 
 # 1. 导航菜单
 nav:
@@ -79,19 +81,34 @@ nav:
 # 2. 主题与样式（推荐Material主题）
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
     - search.suggest
     - search.highlight
+    - navigation.footer
   palette:
-    primary: indigo
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色主题
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/white-balance-sunny
+        name: 切换到亮色主题
   favicon: assets/images/favicon.ico
   logo: assets/images/logo.png
 
 # 2.1 页脚备案信息
 extra:
   copyright: '<a href="http://beian.miit.gov.cn/" rel="noopener" target="_blank">浙ICP备2026007685号</a>'
+  generator: false
+
+extra_css:
+  - assets/css/custom-cards.css
 
 # 3. 插件（必需项！）
 plugins:
