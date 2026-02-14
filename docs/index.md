@@ -6,3 +6,4 @@
 *   这里详细地总结了游戏的[相关设定](./world/majors.md)。
 *   你也可以访问游戏的[项目仓库](https://github.com/pirate-608/ZJUers_simulator.git)。
 *   如果你有兴趣参与开发，也可以阅读[开发人员指南](./dev/framework.md)了解游戏的大致框架。
+*   如果你有任何想法，可以[在GitHub上参与讨论](https://github.com/pirate-608/ZJUers_simulator/discussions/)
