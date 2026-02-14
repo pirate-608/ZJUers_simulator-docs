@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../assets/css/custom-cards.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -64,6 +66,8 @@
   
     
     
+      
+    
     
     
     
@@ -74,6 +78,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -112,7 +121,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色主题"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色主题" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色主题"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色主题" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -158,6 +193,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pirate-608/ZJUers_simulator" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -305,6 +352,18 @@
     折姜大学学生手册
   </label>
   
+    <div class="md-nav__source">
+      <a href="https://github.com/pirate-608/ZJUers_simulator" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -433,6 +492,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    折姜大学校规
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -450,6 +529,135 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 快速上手
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 基础设定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 核心属性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 课程策略（三态）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 休闲与冷却
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-gpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 期末考试与 GPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 随机事件与钉钉
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 学期推进与毕业
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 成就与结局
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 友好提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2612,6 +2820,126 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 快速上手
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 基础设定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 核心属性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 课程策略（三态）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 休闲与冷却
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-gpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 期末考试与 GPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 随机事件与钉钉
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 学期推进与毕业
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 成就与结局
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. 友好提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2627,60 +2955,81 @@
                   
 
 
+  
+  
 
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <title>折姜大学校规 - 游戏规则</title>
-    <style>
-        body { font-family: '微软雅黑', Arial, sans-serif; background: #f8f9fa; color: #222; margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
-        h1, h2 { color: #005bac; }
-        ul, ol { margin-left: 1.5em; }
-        code { background: #f3f3f3; padding: 2px 6px; border-radius: 4px; }
-        .tip { color: #888; font-size: 0.95em; }
-    </style>
-</head>
-<body>
-<div class="container">
-    <h1>折姜大学校规</h1>
-    <h2>1. 基本目标</h2>
-    <ul>
-        <li>体验折大学生的完整大学生活，合理分配精力、心态、压力，顺利毕业。</li>
-        <li>每学期精准选课，提升各门课程擅长度，争取高GPA和丰富成就。</li>
-    </ul>
-    <h2>2. 主要玩法</h2>
-    <ol>
-        <li>每学期自动分配课程，玩家可为每门课选择“摆”、“摸”、“卷”三种学习策略。</li>
-        <li>每个Tick（回合）自动结算课程进度、精力消耗、心态与压力变化。</li>
-        <li>期末考试根据擅长度、心态、压力、运气等综合计算成绩，GPA采用5分制。</li>
-        <li>心态过低或精力归零会导致Game Over，压力过高/过低会影响成长与考试。</li>
-        <li>可通过休息、娱乐、社交等方式调节心态和压力，合理安排生活节奏。</li>
-        <li>达成特定条件可解锁成就，毕业时生成AI文言文总结。</li>
-    </ol>
-    <h2>3. 数值说明</h2>
-    <ul>
-        <li><b>精力</b>：每回合消耗，归零即Game Over，可通过休息等恢复。</li>
-        <li><b>心态</b>：影响成长与考试，过低会负面修正，归零即Game Over。</li>
-        <li><b>压力</b>：40-70为最佳区间，区间内成长/考试有加成，极端时有负面影响。</li>
-        <li><b>GPA</b>：5分制，=∑(学分×绩点)/总学分，绩点=分数/10-5，60分以下为0。</li>
-        <li><b>成就</b>：达成特定条件自动解锁，毕业时展示。</li>
-    </ul>
-    <h2>4. 结局与重开</h2>
-    <ul>
-        <li>顺利完成8学期即毕业，结业时展示AI生成的文言文总结与成就。</li>
-        <li>可随时重开人生，体验不同专业、成长路线和结局。</li>
-    </ul>
-    <h2>5. 其他说明</h2>
-    <ul>
-        <li>支持自定义专业、课程、成就、关键词等内容，详见 world 目录。</li>
-        <li>如遇Bug或有建议，欢迎在GitHub提交Issue。</li>
-    </ul>
-    <p class="tip">版本：2026.01 | 规则如有调整以最新游戏内为准。</p>
-</div>
-</body>
-</html>
+
+<h1 id="_1">折姜大学校规<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 快速上手<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>通过入学考试进入校园，系统会分配专业与首学期课程。</li>
+<li>在课程卡片选择“摆 / 摸 / 卷”策略，影响擅长度增长与精力消耗。</li>
+<li>每个 Tick 约 3 秒自动结算：课程进度、精力、心态、压力、随机事件。</li>
+<li>期末考试根据擅长度、心态、压力、运气给出成绩并更新 GPA。</li>
+<li>精力或心态归零会 Game Over；完成 8 学期则毕业并生成文言文总结。</li>
+</ul>
+<h2 id="2">2. 基础设定<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Tick 时长：约 3 秒；暂停时不结算，不触发事件/钉钉。</li>
+<li>学期计时：底部倒计时为当前学期剩余时间；结束后可进入下一学期。</li>
+<li>课程权重：学分越高，对总精力消耗占比越大。</li>
+<li>专业与课程：每学期自动分配，与专业课表、难度、学分相关。</li>
+</ul>
+<h2 id="3">3. 核心属性<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>精力</strong>：随课程策略结算消耗；低消耗或摆烂可小幅回血；归零即 Game Over。</li>
+<li><strong>心态</strong>：影响成长与考试；低于 50 减益，80+ 有加成；归零即 Game Over。</li>
+<li><strong>压力</strong>：40-70 为最佳区间；区间内成长/考试有加成，过低/过高减益。</li>
+<li><strong>IQ / EQ / 运气</strong>：IQ 影响学习效率；EQ 用于事件与社交；运气影响考试波动与事件。</li>
+<li><strong>声望</strong>：部分事件与成就使用。</li>
+</ul>
+<h2 id="4">4. 课程策略（三态）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>摆 (0)</strong>：几乎不消耗精力，总消耗极低时会回少量精力并减压，但成长很慢。</li>
+<li><strong>摸 (1，默认)</strong>：均衡成长，正常消耗；受心态/压力影响成长速度。</li>
+<li><strong>卷 (2)</strong>：成长最快，精力消耗高，压力可能上升；同样受心态/压力影响。</li>
+<li>成长算法：基础成长 × 策略系数 × (1 + (IQ − 100)%) × 心态/压力修正。</li>
+</ul>
+<h2 id="5">5. 休闲与冷却<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>健身</strong>：需要较高精力（默认 ≥ 50）；消耗后大幅回精力，心态 +，压力 −。</li>
+<li><strong>开黑</strong>：小幅耗精力，心态大幅回升。</li>
+<li><strong>散步</strong>：降低压力。</li>
+<li><strong>刷 CC98</strong>：随机正/负效果，可能回血心态或增加压力。</li>
+<li>每个动作有独立冷却，冷却中会提示剩余秒数。</li>
+</ul>
+<h2 id="6-gpa">6. 期末考试与 GPA<a class="headerlink" href="#6-gpa" title="Permanent link">&para;</a></h2>
+<ul>
+<li>单科分数 ≈ 擅长度 × 0.9 + 心态/压力修正 + 运气波动 + 基础分。</li>
+<li>挂科阈值读取平衡配置，低于阈值计入挂科数并扣心态。</li>
+<li>绩点 = max(分数/10 − 5, 0)，$\text{GPA} = \sum(\text{学分} \times \text{绩点}) / \text{总学分}$。</li>
+<li>全科不挂会奖励心态；考试后生成成绩单并更新最高 GPA。</li>
+</ul>
+<h2 id="7">7. 随机事件与钉钉<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<ul>
+<li>随机事件：按配置的间隔与概率触发，基于当前状态生成剧情；选项会改动属性（有安全上限）。</li>
+<li>钉钉消息：按间隔 + 概率推送，内容受心态/压力/GPA 影响（安慰、催促或祝贺）。</li>
+<li>已出现的随机事件标题会记录，避免短期重复。</li>
+</ul>
+<h2 id="8">8. 学期推进与毕业<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>完成一学期后可进入下一学期，自动分配新课表并重置擅长度。</li>
+<li>大一秋冬起计，共 8 学期；超过 8 学期则判为毕业并展示文言文总结与成就。</li>
+<li>学期切换会尝试自动存档；假期可能插入假期事件。</li>
+</ul>
+<h2 id="9">9. 成就与结局<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<ul>
+<li>成就示例：GPA ≥ 4.0、心态跌破 10、EQ ≥ 95、学习次数 50+ 等，会即时解锁提示。</li>
+<li>毕业时展示已解锁成就；失败（精力/心态归零）则进入 Game Over，可选择重开。</li>
+</ul>
+<h2 id="10">10. 友好提示<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>保持心态 &gt; 50、压力在 40-70 区间，成长和考试都更稳。</li>
+<li>精力告急时切换“摆”，配合散步/开黑回血，避免猝死。</li>
+<li>冷却类休闲优先健身与开黑；CC98 有风险，低心态时慎点。</li>
+<li>暂停后再操作更安全，防止误触浪费精力。</li>
+</ul>
+<p>版本：2026.02｜规则如有调整以游戏内最新提示为准。</p>
 
 
 
@@ -2703,17 +3052,53 @@
         
       </main>
       
+
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../notice/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 折姜大学招生减章">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                折姜大学招生减章
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../preview/start/" class="md-footer__link md-footer__link--next" aria-label="Next: 开始页面">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                开始页面
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -2721,6 +3106,12 @@
   </div>
 </footer>
       
+<div class="md-footer__inner md-grid" style="padding-top: 0;">
+    <div class="md-footer__copyright" style="text-align: center; width: 100%;">
+        <a href="http://beian.miit.gov.cn/" rel="noopener" target="_blank">浙ICP备2026007685号</a>
+    </div>
+</div>
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -2730,7 +3121,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

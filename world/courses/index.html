@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../../assets/css/custom-cards.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,6 +65,8 @@
   
   
     
+    
+      
     
     
     
@@ -117,7 +121,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色主题"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色主题" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色主题"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色主题" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -163,6 +193,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pirate-608/ZJUers_simulator" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -309,6 +351,18 @@
     </a>
     折姜大学学生手册
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pirate-608/ZJUers_simulator" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -2641,175 +2695,509 @@
                   
 
 
+  
+  
+
 
 <h1 id="_1">培养方案列表<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>点击对应学期可直达培养方案内的“学年/学期”标题位置。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
 <th>专业</th>
 <th>缩写</th>
+<th>大一秋冬</th>
+<th>大一春夏</th>
+<th>大二秋冬</th>
+<th>大二春夏</th>
+<th>大三秋冬</th>
+<th>大三春夏</th>
+<th>大四秋冬</th>
+<th>大四春夏</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>飞行器设计与工程</td>
 <td>ADE</td>
+<td><a href="TIER3/ADE/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/ADE/#大一春夏">跳转</a></td>
+<td><a href="TIER3/ADE/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/ADE/#大二春夏">跳转</a></td>
+<td><a href="TIER3/ADE/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/ADE/#大三春夏">跳转</a></td>
+<td><a href="TIER3/ADE/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/ADE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>农学</td>
 <td>AGR</td>
+<td><a href="TIER4/AGR/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/AGR/#大一春夏">跳转</a></td>
+<td><a href="TIER4/AGR/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/AGR/#大二春夏">跳转</a></td>
+<td><a href="TIER4/AGR/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/AGR/#大三春夏">跳转</a></td>
+<td><a href="TIER4/AGR/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/AGR/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>人工智能</td>
 <td>AI</td>
+<td><a href="TIER1/AI/#大一秋冬">跳转</a></td>
+<td><a href="TIER1/AI/#大一春夏">跳转</a></td>
+<td><a href="TIER1/AI/#大二秋冬">跳转</a></td>
+<td><a href="TIER1/AI/#大二春夏">跳转</a></td>
+<td><a href="TIER1/AI/#大三秋冬">跳转</a></td>
+<td><a href="TIER1/AI/#大三春夏">跳转</a></td>
+<td><a href="TIER1/AI/#大四秋冬">跳转</a></td>
+<td><a href="TIER1/AI/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>建筑学</td>
 <td>ARCH</td>
+<td><a href="TIER3/ARCH/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/ARCH/#大一春夏">跳转</a></td>
+<td><a href="TIER3/ARCH/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/ARCH/#大二春夏">跳转</a></td>
+<td><a href="TIER3/ARCH/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/ARCH/#大三春夏">跳转</a></td>
+<td><a href="TIER3/ARCH/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/ARCH/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>动物科学</td>
 <td>AS</td>
+<td><a href="TIER4/AS/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/AS/#大一春夏">跳转</a></td>
+<td><a href="TIER4/AS/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/AS/#大二春夏">跳转</a></td>
+<td><a href="TIER4/AS/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/AS/#大三春夏">跳转</a></td>
+<td><a href="TIER4/AS/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/AS/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>自动化（控制）</td>
 <td>AUT</td>
+<td><a href="TIER2/AUT/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/AUT/#大一春夏">跳转</a></td>
+<td><a href="TIER2/AUT/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/AUT/#大二春夏">跳转</a></td>
+<td><a href="TIER2/AUT/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/AUT/#大三春夏">跳转</a></td>
+<td><a href="TIER2/AUT/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/AUT/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>工商管理</td>
 <td>BA</td>
+<td><a href="TIER3/BA/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/BA/#大一春夏">跳转</a></td>
+<td><a href="TIER3/BA/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/BA/#大二春夏">跳转</a></td>
+<td><a href="TIER3/BA/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/BA/#大三春夏">跳转</a></td>
+<td><a href="TIER3/BA/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/BA/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>生物医学工程</td>
 <td>BME</td>
+<td><a href="TIER3/BME/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/BME/#大一春夏">跳转</a></td>
+<td><a href="TIER3/BME/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/BME/#大二春夏">跳转</a></td>
+<td><a href="TIER3/BME/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/BME/#大三春夏">跳转</a></td>
+<td><a href="TIER3/BME/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/BME/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>化学工程与工艺</td>
 <td>CHE</td>
+<td><a href="TIER3/CHE/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/CHE/#大一春夏">跳转</a></td>
+<td><a href="TIER3/CHE/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/CHE/#大二春夏">跳转</a></td>
+<td><a href="TIER3/CHE/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/CHE/#大三春夏">跳转</a></td>
+<td><a href="TIER3/CHE/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/CHE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>化学</td>
 <td>CHEM</td>
+<td><a href="TIER3/CHEM/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/CHEM/#大一春夏">跳转</a></td>
+<td><a href="TIER3/CHEM/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/CHEM/#大二春夏">跳转</a></td>
+<td><a href="TIER3/CHEM/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/CHEM/#大三春夏">跳转</a></td>
+<td><a href="TIER3/CHEM/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/CHEM/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>汉语言文学</td>
 <td>CL</td>
+<td><a href="TIER4/CL/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/CL/#大一春夏">跳转</a></td>
+<td><a href="TIER4/CL/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/CL/#大二春夏">跳转</a></td>
+<td><a href="TIER4/CL/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/CL/#大三春夏">跳转</a></td>
+<td><a href="TIER4/CL/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/CL/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>计算机科学与技术</td>
 <td>CS</td>
+<td><a href="TIER1/CS/#大一秋冬">跳转</a></td>
+<td><a href="TIER1/CS/#大一春夏">跳转</a></td>
+<td><a href="TIER1/CS/#大二秋冬">跳转</a></td>
+<td><a href="TIER1/CS/#大二春夏">跳转</a></td>
+<td><a href="TIER1/CS/#大三秋冬">跳转</a></td>
+<td><a href="TIER1/CS/#大三春夏">跳转</a></td>
+<td><a href="TIER1/CS/#大四秋冬">跳转</a></td>
+<td><a href="TIER1/CS/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>口腔医学</td>
 <td>DEN</td>
+<td><a href="TIER3/DEN/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/DEN/#大一春夏">跳转</a></td>
+<td><a href="TIER3/DEN/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/DEN/#大二春夏">跳转</a></td>
+<td><a href="TIER3/DEN/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/DEN/#大三春夏">跳转</a></td>
+<td><a href="TIER3/DEN/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/DEN/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>数字金融</td>
 <td>DF</td>
+<td><a href="TIER2/DF/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/DF/#大一春夏">跳转</a></td>
+<td><a href="TIER2/DF/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/DF/#大二春夏">跳转</a></td>
+<td><a href="TIER2/DF/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/DF/#大三春夏">跳转</a></td>
+<td><a href="TIER2/DF/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/DF/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>经济学</td>
 <td>ECON</td>
+<td><a href="TIER3/ECON/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/ECON/#大一春夏">跳转</a></td>
+<td><a href="TIER3/ECON/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/ECON/#大二春夏">跳转</a></td>
+<td><a href="TIER3/ECON/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/ECON/#大三春夏">跳转</a></td>
+<td><a href="TIER3/ECON/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/ECON/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>电气工程及其自动化</td>
 <td>EEA</td>
+<td><a href="TIER2/EEA/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/EEA/#大一春夏">跳转</a></td>
+<td><a href="TIER2/EEA/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/EEA/#大二春夏">跳转</a></td>
+<td><a href="TIER2/EEA/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/EEA/#大三春夏">跳转</a></td>
+<td><a href="TIER2/EEA/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/EEA/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>电子信息工程</td>
 <td>EIE</td>
+<td><a href="TIER2/EIE/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/EIE/#大一春夏">跳转</a></td>
+<td><a href="TIER2/EIE/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/EIE/#大二春夏">跳转</a></td>
+<td><a href="TIER2/EIE/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/EIE/#大三春夏">跳转</a></td>
+<td><a href="TIER2/EIE/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/EIE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>英语</td>
 <td>ENG</td>
+<td><a href="TIER4/ENG/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/ENG/#大一春夏">跳转</a></td>
+<td><a href="TIER4/ENG/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/ENG/#大二春夏">跳转</a></td>
+<td><a href="TIER4/ENG/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/ENG/#大三春夏">跳转</a></td>
+<td><a href="TIER4/ENG/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/ENG/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>环境科学</td>
 <td>ENV</td>
+<td><a href="TIER4/ENV/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/ENV/#大一春夏">跳转</a></td>
+<td><a href="TIER4/ENV/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/ENV/#大二春夏">跳转</a></td>
+<td><a href="TIER4/ENV/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/ENV/#大三春夏">跳转</a></td>
+<td><a href="TIER4/ENV/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/ENV/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>电子科学与技术</td>
 <td>EST</td>
+<td><a href="TIER2/EST/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/EST/#大一春夏">跳转</a></td>
+<td><a href="TIER2/EST/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/EST/#大二春夏">跳转</a></td>
+<td><a href="TIER2/EST/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/EST/#大三春夏">跳转</a></td>
+<td><a href="TIER2/EST/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/EST/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>地质学</td>
 <td>GEO</td>
+<td><a href="TIER4/GEO/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/GEO/#大一春夏">跳转</a></td>
+<td><a href="TIER4/GEO/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/GEO/#大二春夏">跳转</a></td>
+<td><a href="TIER4/GEO/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/GEO/#大三春夏">跳转</a></td>
+<td><a href="TIER4/GEO/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/GEO/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>历史学</td>
 <td>HIS</td>
+<td><a href="TIER4/HIS/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/HIS/#大一春夏">跳转</a></td>
+<td><a href="TIER4/HIS/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/HIS/#大二春夏">跳转</a></td>
+<td><a href="TIER4/HIS/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/HIS/#大三春夏">跳转</a></td>
+<td><a href="TIER4/HIS/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/HIS/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>信息安全</td>
 <td>IS</td>
+<td><a href="TIER2/IS/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/IS/#大一春夏">跳转</a></td>
+<td><a href="TIER2/IS/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/IS/#大二春夏">跳转</a></td>
+<td><a href="TIER2/IS/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/IS/#大三春夏">跳转</a></td>
+<td><a href="TIER2/IS/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/IS/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>新闻学</td>
 <td>JOUR</td>
+<td><a href="TIER4/JOUR/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/JOUR/#大一春夏">跳转</a></td>
+<td><a href="TIER4/JOUR/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/JOUR/#大二春夏">跳转</a></td>
+<td><a href="TIER4/JOUR/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/JOUR/#大三春夏">跳转</a></td>
+<td><a href="TIER4/JOUR/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/JOUR/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>法学</td>
 <td>LAW</td>
+<td><a href="TIER3/LAW/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/LAW/#大一春夏">跳转</a></td>
+<td><a href="TIER3/LAW/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/LAW/#大二春夏">跳转</a></td>
+<td><a href="TIER3/LAW/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/LAW/#大三春夏">跳转</a></td>
+<td><a href="TIER3/LAW/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/LAW/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>数学与应用数学</td>
 <td>MAM</td>
+<td><a href="TIER2/MAM/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/MAM/#大一春夏">跳转</a></td>
+<td><a href="TIER2/MAM/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/MAM/#大二春夏">跳转</a></td>
+<td><a href="TIER2/MAM/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/MAM/#大三春夏">跳转</a></td>
+<td><a href="TIER2/MAM/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/MAM/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>临床医学（5+3）</td>
 <td>MD</td>
+<td><a href="TIER1/MD/#大一秋冬">跳转</a></td>
+<td><a href="TIER1/MD/#大一春夏">跳转</a></td>
+<td><a href="TIER1/MD/#大二秋冬">跳转</a></td>
+<td><a href="TIER1/MD/#大二春夏">跳转</a></td>
+<td><a href="TIER1/MD/#大三秋冬">跳转</a></td>
+<td><a href="TIER1/MD/#大三春夏">跳转</a></td>
+<td><a href="TIER1/MD/#大四秋冬">跳转</a></td>
+<td><a href="TIER1/MD/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>机械工程</td>
 <td>ME</td>
+<td><a href="TIER3/ME/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/ME/#大一春夏">跳转</a></td>
+<td><a href="TIER3/ME/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/ME/#大二春夏">跳转</a></td>
+<td><a href="TIER3/ME/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/ME/#大三春夏">跳转</a></td>
+<td><a href="TIER3/ME/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/ME/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>微电子科学与工程</td>
 <td>MISE</td>
+<td><a href="TIER2/MISE/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/MISE/#大一春夏">跳转</a></td>
+<td><a href="TIER2/MISE/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/MISE/#大二春夏">跳转</a></td>
+<td><a href="TIER2/MISE/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/MISE/#大三春夏">跳转</a></td>
+<td><a href="TIER2/MISE/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/MISE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>材料科学与工程</td>
 <td>MSE</td>
+<td><a href="TIER3/MSE/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/MSE/#大一春夏">跳转</a></td>
+<td><a href="TIER3/MSE/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/MSE/#大二春夏">跳转</a></td>
+<td><a href="TIER3/MSE/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/MSE/#大三春夏">跳转</a></td>
+<td><a href="TIER3/MSE/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/MSE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>能源与环境系统工程</td>
 <td>NEE</td>
+<td><a href="TIER3/NEE/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/NEE/#大一春夏">跳转</a></td>
+<td><a href="TIER3/NEE/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/NEE/#大二春夏">跳转</a></td>
+<td><a href="TIER3/NEE/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/NEE/#大三春夏">跳转</a></td>
+<td><a href="TIER3/NEE/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/NEE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>光电信息科学与工程</td>
 <td>OE</td>
+<td><a href="TIER2/OE/#大一秋冬">跳转</a></td>
+<td><a href="TIER2/OE/#大一春夏">跳转</a></td>
+<td><a href="TIER2/OE/#大二秋冬">跳转</a></td>
+<td><a href="TIER2/OE/#大二春夏">跳转</a></td>
+<td><a href="TIER2/OE/#大三秋冬">跳转</a></td>
+<td><a href="TIER2/OE/#大三春夏">跳转</a></td>
+<td><a href="TIER2/OE/#大四秋冬">跳转</a></td>
+<td><a href="TIER2/OE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>药学</td>
 <td>PHAR</td>
+<td><a href="TIER3/PHAR/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/PHAR/#大一春夏">跳转</a></td>
+<td><a href="TIER3/PHAR/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/PHAR/#大二春夏">跳转</a></td>
+<td><a href="TIER3/PHAR/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/PHAR/#大三春夏">跳转</a></td>
+<td><a href="TIER3/PHAR/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/PHAR/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>哲学</td>
 <td>PHI</td>
+<td><a href="TIER4/PHI/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/PHI/#大一春夏">跳转</a></td>
+<td><a href="TIER4/PHI/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/PHI/#大二春夏">跳转</a></td>
+<td><a href="TIER4/PHI/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/PHI/#大三春夏">跳转</a></td>
+<td><a href="TIER4/PHI/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/PHI/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>物理学</td>
 <td>PHY</td>
+<td><a href="TIER3/PHY/#大一秋冬">跳转</a></td>
+<td><a href="TIER3/PHY/#大一春夏">跳转</a></td>
+<td><a href="TIER3/PHY/#大二秋冬">跳转</a></td>
+<td><a href="TIER3/PHY/#大二春夏">跳转</a></td>
+<td><a href="TIER3/PHY/#大三秋冬">跳转</a></td>
+<td><a href="TIER3/PHY/#大三春夏">跳转</a></td>
+<td><a href="TIER3/PHY/#大四秋冬">跳转</a></td>
+<td><a href="TIER3/PHY/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>心理学</td>
 <td>PSY</td>
+<td><a href="TIER4/PSY/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/PSY/#大一春夏">跳转</a></td>
+<td><a href="TIER4/PSY/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/PSY/#大二春夏">跳转</a></td>
+<td><a href="TIER4/PSY/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/PSY/#大三春夏">跳转</a></td>
+<td><a href="TIER4/PSY/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/PSY/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>机器人工程</td>
 <td>RE</td>
+<td><a href="TIER1/RE/#大一秋冬">跳转</a></td>
+<td><a href="TIER1/RE/#大一春夏">跳转</a></td>
+<td><a href="TIER1/RE/#大二秋冬">跳转</a></td>
+<td><a href="TIER1/RE/#大二春夏">跳转</a></td>
+<td><a href="TIER1/RE/#大三秋冬">跳转</a></td>
+<td><a href="TIER1/RE/#大三春夏">跳转</a></td>
+<td><a href="TIER1/RE/#大四秋冬">跳转</a></td>
+<td><a href="TIER1/RE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>软件工程</td>
 <td>SE</td>
+<td><a href="TIER1/SE/#大一秋冬">跳转</a></td>
+<td><a href="TIER1/SE/#大一春夏">跳转</a></td>
+<td><a href="TIER1/SE/#大二秋冬">跳转</a></td>
+<td><a href="TIER1/SE/#大二春夏">跳转</a></td>
+<td><a href="TIER1/SE/#大三秋冬">跳转</a></td>
+<td><a href="TIER1/SE/#大三春夏">跳转</a></td>
+<td><a href="TIER1/SE/#大四秋冬">跳转</a></td>
+<td><a href="TIER1/SE/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>社会学</td>
 <td>SOC</td>
+<td><a href="TIER4/SOC/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/SOC/#大一春夏">跳转</a></td>
+<td><a href="TIER4/SOC/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/SOC/#大二春夏">跳转</a></td>
+<td><a href="TIER4/SOC/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/SOC/#大三春夏">跳转</a></td>
+<td><a href="TIER4/SOC/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/SOC/#大四春夏">跳转</a></td>
 </tr>
 <tr>
 <td>茶学</td>
 <td>TEA</td>
+<td><a href="TIER4/TEA/#大一秋冬">跳转</a></td>
+<td><a href="TIER4/TEA/#大一春夏">跳转</a></td>
+<td><a href="TIER4/TEA/#大二秋冬">跳转</a></td>
+<td><a href="TIER4/TEA/#大二春夏">跳转</a></td>
+<td><a href="TIER4/TEA/#大三秋冬">跳转</a></td>
+<td><a href="TIER4/TEA/#大三春夏">跳转</a></td>
+<td><a href="TIER4/TEA/#大四秋冬">跳转</a></td>
+<td><a href="TIER4/TEA/#大四春夏">跳转</a></td>
 </tr>
 </tbody>
 </table>
@@ -2835,17 +3223,53 @@
         
       </main>
       
+
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../majors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 专业">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                专业
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="TIER1/CS/" class="md-footer__link md-footer__link--next" aria-label="Next: 计算机科学与技术">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                计算机科学与技术
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -2853,6 +3277,12 @@
   </div>
 </footer>
       
+<div class="md-footer__inner md-grid" style="padding-top: 0;">
+    <div class="md-footer__copyright" style="text-align: center; width: 100%;">
+        <a href="http://beian.miit.gov.cn/" rel="noopener" target="_blank">浙ICP备2026007685号</a>
+    </div>
+</div>
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -2862,7 +3292,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

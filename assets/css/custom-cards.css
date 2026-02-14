@@ -1,0 +1,55 @@
+:root {
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --card-bg-hover: rgba(0, 0, 0, 0.08);
+    --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* 顶部标签导航卡片化 */
+.md-tabs__link {
+    border-radius: 12px;
+    padding-inline: 16px;
+    margin: 8px 6px;
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link:focus-visible {
+    background: var(--card-bg-hover);
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-1px);
+}
+
+.md-tabs__item--active .md-tabs__link {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* 侧边目录与内部锚点卡片化 */
+.md-nav__link {
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin: 2px 0;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-nav__link:hover,
+.md-nav__link:focus-visible {
+    background: var(--card-bg-hover);
+    box-shadow: var(--card-shadow);
+}
+
+.md-nav__item .md-nav__link--active {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* 兼容暗色模式的透明度表现 */
+[data-md-color-scheme="slate"] {
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-bg-hover: rgba(255, 255, 255, 0.12);
+}
