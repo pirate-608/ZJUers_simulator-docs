@@ -1,3 +1,7 @@
+---
+search:
+  exclude: true
+---
 # 入学测试题库
 
 > 来源：temp/entrance_exam.json
