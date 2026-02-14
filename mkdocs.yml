@@ -112,7 +112,9 @@ extra_css:
 
 # 3. 插件（必需项！）
 plugins:
-  - search  # 搜索插件
+  - search:  # 搜索插件
+      exclude:
+        - internal/*
   # 在本地预览时可启用此插件，但在GitHub Actions中会自动构建
   # - mkdocs-material
 

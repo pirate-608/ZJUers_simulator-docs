@@ -1,3 +1,5 @@
 /site
 /json
 /.venv
+/temp
+/.vscode
