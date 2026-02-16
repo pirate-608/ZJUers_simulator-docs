@@ -124,12 +124,6 @@ extra_css:
 # 3. 插件（必需项！）
 plugins:
   - search # 搜索插件
-  - exclude-search:  # 排除特定页面不被搜索到
-      exclude_unreferenced: true  # 排除未被导航引用的页面
-      exclude:
-        - internal/index.md
-        - internal/entrance_exam.md
-        - internal/admin.md
 
 # 4. 扩展（Markdown增强）
 markdown_extensions:
