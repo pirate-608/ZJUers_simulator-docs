@@ -85,17 +85,24 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
     - search.suggest
     - search.highlight
+    - search.share
     - navigation.footer
   palette:
     - scheme: default
       primary: indigo
+      accent: amber
       toggle:
         icon: material/weather-night
         name: 切换到暗色主题
     - scheme: slate
       primary: indigo
+      accent: amber
       toggle:
         icon: material/white-balance-sunny
         name: 切换到亮色主题
@@ -109,6 +116,8 @@ extra:
 
 extra_css:
   - assets/css/custom-cards.css
+  - assets/css/theme-tweaks.css
+  - assets/css/fix-footer.css
 
 # 3. 插件（必需项！）
 plugins:

@@ -73,4 +73,7 @@
 - 前端：检查 WebSocket 数据流和渲染异常。
 - 数据：验证 world JSON 的结构与字段完整性。
 
-### 16. docker环境的具体部署/运维：- **如何重启服务？** `docker compose up -d --build`- **数据库迁移？** `docker compose up -d migrate`（或手动 `alembic upgrade head`）- **查看日志？** `docker compose logs -f backend`
+### 16. docker环境的具体部署/运维：
+- **如何重启服务？** `docker compose up -d --build`
+- **数据库迁移？** `docker compose up -d migrate`（或手动 `alembic upgrade head`）
+- **查看日志？** `docker compose logs -f backend`
