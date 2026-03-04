@@ -87,9 +87,14 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -124,12 +129,26 @@ extra_css:
 # 3. 插件（必需项！）
 plugins:
   - search # 搜索插件
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 90%
+      height: auto
 
 # 4. 扩展（Markdown增强）
 markdown_extensions:
   - admonition
   - codehilite
   - attr_list  # 允许在标题等处使用 {#id}
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
   - pymdownx.tilde  # 支持删除线 ~~text~~
   - toc:
       permalink: true
