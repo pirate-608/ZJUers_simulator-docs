@@ -73,12 +73,18 @@ nav:
     - 关键词: world/keywords.md
   - 开发人员指南:
     - 资源下载: dev/sources_dev.md
-    - 框架说明: dev/framework.md
+    - 框架说明: 
+      - 后端: dev/framework/backend_framework.md
+      - 前端: dev/framework/frontend_framework.md
     - 开发环境搭建: dev/setup.md
     - API文档: dev/api.md
   - 常见问题: 
     - 玩家常见问题: faq.md
     - 开发者常见问题: dev/faq_dev.md
+  - 关于: 
+    - 更新日志: about/release-notes.md
+    - 许可: about/LICENSE.md
+    - 贡献: about/contributing.md
 
 # 2. 主题与样式（推荐Material主题）
 theme:
@@ -142,7 +148,11 @@ markdown_extensions:
   - codehilite
   - attr_list  # 允许在标题等处使用 {#id}
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true
