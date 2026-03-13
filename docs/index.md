@@ -10,7 +10,6 @@
 [游戏规则](rules.md){ .md-button }
 [开始游戏](https://67656.fun){ .md-button }
 [相关设定](./world/majors.md){ .md-button }
-[项目仓库](https://github.com/pirate-608/ZJUers_simulator.git){ .md-button }
 [开发人员指南](./dev/api.md){ .md-button }
 [参与讨论](https://github.com/pirate-608/ZJUers_simulator/discussions/){ .md-button }
 
