@@ -1,0 +1,19 @@
+# 禁用特定语言的 Copilot 建议
+disableLanguages:
+  - "plaintext"
+# 自定义代码提示的前缀指令（引导 Copilot 遵循的规则）
+prompts:
+  - name: "code-style"
+    prompt: "所有代码必须遵循 Google 代码风格，Python 代码需添加类型注解，函数必须包含 docstring"
+  
+  - name: "conversation-behavior"
+    prompt: |
+      核心规则：
+      1. 回答用户问题前，必须先检查是否获取了足够的上下文/参数/场景信息；
+      2. 如果信息不足（比如用户未说明技术栈、需求细节、使用场景），**禁止直接猜测回答**，也禁止结束对话；
+      3. 必须主动调用「ask user」工具，清晰列出需要补充的信息点（如“请补充：1. 你使用的编程语言；2. 具体的业务场景”）；
+      4. 仅当用户补充完所有必要信息后，再给出完整回答。
+# 配置 Copilot Chat 的默认上下文规则
+chat:
+  context:
+    includeFiles: [".github/copilot.yml",  "README.md", ".github/CODE_GUIDELINES.md"]  # Chat 时自动包含的参考文件

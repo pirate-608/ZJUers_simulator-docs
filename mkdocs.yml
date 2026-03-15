@@ -20,6 +20,10 @@ nav:
     - 钉钉消息: preview/dingtalk.md
   - 游戏设定:
     - 资源下载: world/sources.md
+    - 角色: world/characters.md
+    - 成就: world/achievements.md
+    - 数值: world/game_balance.md
+    - 关键词: world/keywords.md
     - 专业: world/majors.md
     - 培养方案:
       - 总览: world/courses.md
@@ -67,10 +71,6 @@ nav:
         - 心理学: world/courses/TIER4/PSY.md
         - 社会学: world/courses/TIER4/SOC.md
         - 地质学: world/courses/TIER4/GEO.md
-    - 角色: world/characters.md
-    - 成就: world/achievements.md
-    - 数值: world/game_balance.md
-    - 关键词: world/keywords.md
   - 开发人员指南:
     - 资源下载: dev/sources_dev.md
     - 框架说明: 
