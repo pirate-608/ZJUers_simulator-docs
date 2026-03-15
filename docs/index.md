@@ -2,6 +2,7 @@
   <img src="./assets/images/logo.svg" alt="Game Logo" width="120" />
   <h1>ZJUers Simulator</h1>
   <p><strong>我在这里放了67656颗星星，希望每个折大人都能找到属于自己的一颗</strong></p>
+  <p><strong><a href="https://67656.fun">67656.fun</a></strong></p>
 </div>
 
 ## **快速入口**
