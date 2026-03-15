@@ -21,7 +21,7 @@ jobs:
 
       - name: Add Gitee remote repo
         run: |
-          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/ZJUers_simulator.git
+          git remote add gitee https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USERNAME }}/zjus_docs.git
 
       - name: Pull Gitee latest code (避免冲突)
         run: |
