@@ -18,6 +18,11 @@ nav:
     - 主循环控制台: preview/dashboard.md
     - 随机事件: preview/event.md
     - 钉钉消息: preview/dingtalk.md
+  - 用户指南:
+    - 在线游戏: user/online_guide.md
+    - 本地部署: user/local_deploy.md
+    - 原生本地部署: user/local_deploy_bare.md
+    - 模型配置: user/models.md
   - 游戏设定:
     - 资源下载: world/sources.md
     - 角色: world/characters.md

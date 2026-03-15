@@ -33,8 +33,9 @@
    ```bash
    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
+   如果需要运行前端，可以进入`zjus-frontend`目录，然后运行`npm run dev`
 5. 访问
-   - 前端：`http://localhost:8000/`
+   - 前端：`http://localhost:3000`
    - API 文档：`http://localhost:8000/docs`
 
 ## Docker 开发/部署
@@ -56,6 +57,9 @@
    ```
 
 ## Alembic 迁移操作
+*注：使用默认的配置文件启动docker后，会自动执行一次数据库迁移*
+
+手动迁移：
 - 生成迁移：
   ```bash
   docker compose run --rm migrate alembic revision --autogenerate -m "add_xxx"
