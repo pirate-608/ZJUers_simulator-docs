@@ -78,6 +78,7 @@ nav:
       - 前端: dev/framework/frontend_framework.md
     - 开发环境搭建: dev/setup.md
     - API文档: dev/api.md
+    - 测试: dev/test.md
   - 常见问题: 
     - 玩家常见问题: faq.md
     - 开发者常见问题: dev/faq_dev.md
