@@ -38,14 +38,22 @@
    - 前端：`http://localhost:3000`
    - API 文档：`http://localhost:8000/docs`
 
-## Docker 开发/部署
-1. 准备 .env（同上，务必填写安全密钥与数据库密码）。
-2. 启动迁移和服务
-   ```bash
-   docker compose up -d --build migrate
-   docker compose up -d --build backend nginx
-   ```
-   或一次性：`docker compose up -d --build`（migrate 会先跑完）。
+## Docker 开发/部署 (推荐)
+1. 准备 `.env`（同上，务必填写安全密钥与数据库密码）。
+2. Docker Compose 方式：
+   - **生产环境拉起**：
+     ```bash
+     docker compose up -d
+     ```
+     （注意：线上环境不再需要本地 build，`docker-compose.yml` 默认拉取线上的预构建镜像 `pirate608/zjus-backend` 和 `pirate608/zjus-frontend`）。
+   - **本地热更新开发拉起**：
+     如果你要修改代码并实时预览，运行：
+     ```bash
+     docker compose up -d --build
+     ```
+     （本地存在 `docker-compose.override.yml`，这会让 Docker 自动在本地重新 build 前后端，并挂载对应目录以支持热更新）。
+3. 纯宿主机开发（Vue Vite + Uvicorn）：
+   推荐前后端分离启动，获得最极致的热更新体验。具体细节请参考 [纯宿主机本地部署指南](local_deployment_guide.md)。
 3. 查看日志
    ```bash
    docker compose logs -f backend
@@ -76,11 +84,10 @@
 - 生产务必使用强随机的 SECRET_KEY、ADMIN_PASSWORD、ADMIN_SESSION_SECRET。
 
 ## 目录速览
-- 后端：`app/`
-- 前端静态：`static/`，模板：`templates/`
-- 世界/数值：`world/`
-- 迁移：`alembic/`
-- 反代：`nginx/`
+- 后端：`zjus-backend/app/`
+- 前端 (Vue3)：`zjus-frontend/src/`
+- 世界/数值数据：`zjus-backend/world/`
+- 反代与证书：`nginx/`
 
 ## 常见问题
 - **启动提示默认密钥不安全**：检查 .env 是否被正确加载到容器（compose 中已使用 `env_file`）。

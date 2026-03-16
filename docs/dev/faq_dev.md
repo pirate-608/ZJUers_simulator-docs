@@ -1,22 +1,28 @@
-## FAQ（开发者）
+## 开发者常见问题 (FAQ)
+
 > 适用对象：参与该项目后端/前端/数据维护/部署的开发者。
 
 ### 1. 项目入口与整体结构是什么？
-- 后端入口是 [app/main.py](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/main.py)。
-- 主要目录：
-	- [app/api](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/api)：HTTP/WS 路由与依赖注入。
-	- [app/core](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/core)：配置、数据库、LLM、安全等基础能力。
-	- [app/game](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/game)：核心玩法逻辑与引擎。
-	- [app/repositories](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/repositories)：Redis 读写与数据归一化。
-	- [app/services](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/services)：业务编排（存档、世界、游戏流程）。
-	- [world](https://github.com/pirate-608/ZJUers_simulator/tree/main/world)：静态世界数据（专业/课程/规则/成就等）。
+- 项目已拆分为前后端独立目录：`zjus-backend` 和 `zjus-frontend`。
+- 后端入口是 `zjus-backend/app/main.py`。
+- 后端主要目录：
+	- `app/api`：HTTP/WS 路由与依赖注入。
+	- `app/core`：配置、数据库、LLM、安全等基础能力。
+	- `app/game`：核心玩法逻辑与引擎。
+	- `app/repositories`：Redis 读写与数据归一化。
+	- `app/services`：业务编排（存档、世界、游戏流程）。
+	- `world`：静态世界数据（专业/课程/角色/规则等）。
+- 前端主要目录：
+	- `src/components`：Vue 组件 (如 `LoginView.vue`, `GameView.vue`)。
+	- `src/composables`：WebSocket 通信逻辑 (`useGameWebSocket.js`)。
+	- `src/stores`：Pinia 状态管理。
 
 ### 2. 本地运行的最小步骤？
-- 安装依赖：
-	- `pip install -r requirements.txt`
-- 启动服务：
-	- `uvicorn app.main:app --reload`
-- 如果依赖 Redis/数据库，请参考 README 中的环境变量与 Docker 配置。
+极速开发推荐混合模式：
+1. 根目录起底座：`docker compose up -d db redis`
+2. 前端目录：`npm install` -> `npm run dev`
+3. 后端目录：配置 `.env` -> `pip install -r requirements.txt` -> `uvicorn app.main:app --reload`
+*对于想纯 Docker 搞定的，使用 `docker compose up -d --build` 即可利用 `docker-compose.override.yml` 实现本地代码挂载。*
 
 ### 3. Redis 数据在哪里定义？如何保证结构一致？
 - 所有 Redis 读写都集中在 [app/repositories/redis_repo.py](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/repositories/redis_repo.py)。
@@ -35,18 +41,17 @@
 - 读取世界数据使用 `WorldService`，可做缓存优化。
 
 ### 7. 课程/专业/规则数据如何维护？
-- 静态数据位于 [world](https://github.com/pirate-608/ZJUers_simulator/tree/main/world)。
-- 课程在 [world/courses](https://github.com/pirate-608/ZJUers_simulator/tree/main/world/courses) 下以专业缩写命名的 JSON 文件维护。
-- 修改后建议运行数据清洗脚本并验证前端展示。
+- 静态数据位于 `zjus-backend/world`。
+- 课程在 `zjus-backend/world/courses` 下以专业缩写命名的 JSON 文件维护。
 
 ### 8. 存档数据是如何保存与恢复的？
 - `SaveService` 负责从 Redis 快照生成 DB 存档与恢复。
 - 如果更改 stats/courses 结构，需同步更新快照与迁移逻辑。
 
 ### 9. 如何添加新的事件或推送字段？
-- 事件结构定义在 `GameEvent`（[app/core/events.py](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/core/events.py)）。
+- 事件结构定义在 `GameEvent`（`zjus-backend/app/core/events.py`）。
 - 引擎中统一通过 `emit()` 推送事件。
-- 前端接收字段需同步更新静态脚本（如 [static/js/main.js](https://github.com/pirate-608/ZJUers_simulator/tree/main/static/js/main.js)）。
+- 前端接收字段需同步更新 Vue 源码，主要在 `zjus-frontend/src/composables/useGameWebSocket.js` 中解析。
 
 ### 10. 依赖注入 (DI) 入口在哪里？
 - 所有 FastAPI 依赖集中在 [app/api/deps.py](https://github.com/pirate-608/ZJUers_simulator/tree/main/app/api/deps.py)。
@@ -72,8 +77,3 @@
 - 后端：先看日志，再看 Redis 快照内容是否合理。
 - 前端：检查 WebSocket 数据流和渲染异常。
 - 数据：验证 world JSON 的结构与字段完整性。
-
-### 16. docker环境的具体部署/运维：
-- **如何重启服务？** `docker compose up -d --build`
-- **数据库迁移？** `docker compose up -d migrate`（或手动 `alembic upgrade head`）
-- **查看日志？** `docker compose logs -f backend`
