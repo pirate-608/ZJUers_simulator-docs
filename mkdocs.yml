@@ -7,10 +7,7 @@ repo_name: GitHub
 
 # 1. 导航菜单
 nav:
-  - 首页: 
-    - 快速开始: index.md
-    - 折姜大学招生减章: notice.md
-    - 折姜大学校规: rules.md
+  - 首页: index.md
   - 游戏预览: 
     - 开始页面: preview/start.md
     - 入学考试: preview/exam.md
@@ -19,6 +16,8 @@ nav:
     - 随机事件: preview/event.md
     - 钉钉消息: preview/dingtalk.md
   - 用户指南:
+    - 折姜大学招生减章: user/notice.md
+    - 折姜大学校规: user/rules.md
     - 在线游戏: user/online_guide.md
     - 本地部署: user/local_deploy.md
     - 原生本地部署: user/local_deploy_bare.md
@@ -150,6 +149,7 @@ plugins:
 
 # 4. 扩展（Markdown增强）
 markdown_extensions:
+  - meta
   - admonition
   - codehilite
   - attr_list  # 允许在标题等处使用 {#id}

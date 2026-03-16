@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 <div align="center">
   <img src="./assets/images/logo.svg" alt="Game Logo" width="120" />
   <h1>ZJUers Simulator</h1>
@@ -7,8 +12,8 @@
 
 ## **快速入口**
 
-[游戏说明](notice.md){ .md-button }
-[游戏规则](rules.md){ .md-button }
+[游戏说明](user/notice.md){ .md-button }
+[游戏规则](user/rules.md){ .md-button }
 [开始游戏](https://67656.fun){ .md-button }
 [相关设定](./world/majors.md){ .md-button }
 [开发人员指南](./dev/api.md){ .md-button }
