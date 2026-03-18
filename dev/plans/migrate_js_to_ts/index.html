@@ -7,31 +7,31 @@
       
       
       
-        <link rel="canonical" href="https://docs.67656.fun/user/rules/">
+        <link rel="canonical" href="https://docs.67656.fun/dev/plans/migrate_js_to_ts/">
       
       
-        <link rel="prev" href="../notice/">
+        <link rel="prev" href="../../api/">
       
       
-        <link rel="next" href="../online_guide/">
+        <link rel="next" href="../../test/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.ico">
+      <link rel="icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>折姜大学校规 - 折姜大学学生手册</title>
+        <title>ZJUers模拟器前端计划迁移至TypeScript - 折姜大学学生手册</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,19 +50,19 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/custom-cards.css">
+      <link rel="stylesheet" href="../../../assets/css/custom-cards.css">
     
-      <link rel="stylesheet" href="../../assets/css/theme-tweaks.css">
+      <link rel="stylesheet" href="../../../assets/css/theme-tweaks.css">
     
-      <link rel="stylesheet" href="../../assets/css/fix-footer.css">
+      <link rel="stylesheet" href="../../../assets/css/fix-footer.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#vue-3-javascript-typescript" class="md-skip">
           Skip to content
         </a>
       
@@ -117,9 +117,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="折姜大学学生手册" class="md-header__button md-logo" aria-label="折姜大学学生手册" data-md-component="logo">
+    <a href="../../.." title="折姜大学学生手册" class="md-header__button md-logo" aria-label="折姜大学学生手册" data-md-component="logo">
       
-  <img src="../../assets/images/logo.png" alt="logo">
+  <img src="../../../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              折姜大学校规
+              ZJUers模拟器前端计划迁移至TypeScript
             
           </span>
         </div>
@@ -254,7 +254,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -275,7 +275,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../preview/start/" class="md-tabs__link">
+        <a href="../../../preview/start/" class="md-tabs__link">
           
   
   
@@ -291,13 +291,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../notice/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../user/notice/" class="md-tabs__link">
           
   
   
@@ -317,7 +315,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../world/sources/" class="md-tabs__link">
+        <a href="../../../world/sources/" class="md-tabs__link">
           
   
   
@@ -333,11 +331,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../dev/sources_dev/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../sources_dev/" class="md-tabs__link">
           
   
   
@@ -357,7 +357,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../faq/" class="md-tabs__link">
+        <a href="../../../faq/" class="md-tabs__link">
           
   
   
@@ -377,7 +377,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/release-notes/" class="md-tabs__link">
+        <a href="../../../about/release-notes/" class="md-tabs__link">
           
   
   
@@ -413,9 +413,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="折姜大学学生手册" class="md-nav__button md-logo" aria-label="折姜大学学生手册" data-md-component="logo">
+    <a href="../../.." title="折姜大学学生手册" class="md-nav__button md-logo" aria-label="折姜大学学生手册" data-md-component="logo">
       
-  <img src="../../assets/images/logo.png" alt="logo">
+  <img src="../../../assets/images/logo.png" alt="logo">
 
     </a>
     折姜大学学生手册
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -523,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/start/" class="md-nav__link">
+      <a href="../../../preview/start/" class="md-nav__link">
         
   
   
@@ -551,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/exam/" class="md-nav__link">
+      <a href="../../../preview/exam/" class="md-nav__link">
         
   
   
@@ -579,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/admission/" class="md-nav__link">
+      <a href="../../../preview/admission/" class="md-nav__link">
         
   
   
@@ -607,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/dashboard/" class="md-nav__link">
+      <a href="../../../preview/dashboard/" class="md-nav__link">
         
   
   
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/event/" class="md-nav__link">
+      <a href="../../../preview/event/" class="md-nav__link">
         
   
   
@@ -663,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preview/dingtalk/" class="md-nav__link">
+      <a href="../../../preview/dingtalk/" class="md-nav__link">
         
   
   
@@ -695,31 +695,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -737,7 +734,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -755,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notice/" class="md-nav__link">
+      <a href="../../../user/notice/" class="md-nav__link">
         
   
   
@@ -780,37 +777,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    折姜大学校规
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../user/rules/" class="md-nav__link">
         
   
   
@@ -826,136 +796,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 快速上手
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 基础设定
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 核心属性
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. 课程策略（三态）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. 休闲与冷却
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-gpa" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. 期末考试与 GPA
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. 随机事件与钉钉
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. 学期推进与毕业
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9. 成就与结局
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. 友好提示
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -968,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../online_guide/" class="md-nav__link">
+      <a href="../../../user/online_guide/" class="md-nav__link">
         
   
   
@@ -996,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../local_deploy/" class="md-nav__link">
+      <a href="../../../user/local_deploy/" class="md-nav__link">
         
   
   
@@ -1024,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../local_deploy_bare/" class="md-nav__link">
+      <a href="../../../user/local_deploy_bare/" class="md-nav__link">
         
   
   
@@ -1052,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/" class="md-nav__link">
+      <a href="../../../user/models/" class="md-nav__link">
         
   
   
@@ -1141,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/sources/" class="md-nav__link">
+      <a href="../../../world/sources/" class="md-nav__link">
         
   
   
@@ -1169,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/characters/" class="md-nav__link">
+      <a href="../../../world/characters/" class="md-nav__link">
         
   
   
@@ -1197,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/achievements/" class="md-nav__link">
+      <a href="../../../world/achievements/" class="md-nav__link">
         
   
   
@@ -1225,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/game_balance/" class="md-nav__link">
+      <a href="../../../world/game_balance/" class="md-nav__link">
         
   
   
@@ -1253,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/keywords/" class="md-nav__link">
+      <a href="../../../world/keywords/" class="md-nav__link">
         
   
   
@@ -1281,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/majors/" class="md-nav__link">
+      <a href="../../../world/majors/" class="md-nav__link">
         
   
   
@@ -1363,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/" class="md-nav__link">
+      <a href="../../../world/courses/" class="md-nav__link">
         
   
   
@@ -1445,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER1/CS/" class="md-nav__link">
+      <a href="../../../world/courses/TIER1/CS/" class="md-nav__link">
         
   
   
@@ -1473,7 +1313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER1/AI/" class="md-nav__link">
+      <a href="../../../world/courses/TIER1/AI/" class="md-nav__link">
         
   
   
@@ -1501,7 +1341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER1/SE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER1/SE/" class="md-nav__link">
         
   
   
@@ -1529,7 +1369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER1/MD/" class="md-nav__link">
+      <a href="../../../world/courses/TIER1/MD/" class="md-nav__link">
         
   
   
@@ -1557,7 +1397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER1/RE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER1/RE/" class="md-nav__link">
         
   
   
@@ -1647,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/EEA/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/EEA/" class="md-nav__link">
         
   
   
@@ -1675,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/OE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/OE/" class="md-nav__link">
         
   
   
@@ -1703,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/AUT/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/AUT/" class="md-nav__link">
         
   
   
@@ -1731,7 +1571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/MISE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/MISE/" class="md-nav__link">
         
   
   
@@ -1759,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/IS/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/IS/" class="md-nav__link">
         
   
   
@@ -1787,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/MAM/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/MAM/" class="md-nav__link">
         
   
   
@@ -1815,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/EIE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/EIE/" class="md-nav__link">
         
   
   
@@ -1843,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/EST/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/EST/" class="md-nav__link">
         
   
   
@@ -1871,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER2/DF/" class="md-nav__link">
+      <a href="../../../world/courses/TIER2/DF/" class="md-nav__link">
         
   
   
@@ -1961,7 +1801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/ME/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/ME/" class="md-nav__link">
         
   
   
@@ -1989,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/PHY/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/PHY/" class="md-nav__link">
         
   
   
@@ -2017,7 +1857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/NEE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/NEE/" class="md-nav__link">
         
   
   
@@ -2045,7 +1885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/DEN/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/DEN/" class="md-nav__link">
         
   
   
@@ -2073,7 +1913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/ADE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/ADE/" class="md-nav__link">
         
   
   
@@ -2101,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/ARCH/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/ARCH/" class="md-nav__link">
         
   
   
@@ -2129,7 +1969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/CHE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/CHE/" class="md-nav__link">
         
   
   
@@ -2157,7 +1997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/MSE/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/MSE/" class="md-nav__link">
         
   
   
@@ -2185,7 +2025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/CHEM/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/CHEM/" class="md-nav__link">
         
   
   
@@ -2213,7 +2053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/ECON/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/ECON/" class="md-nav__link">
         
   
   
@@ -2241,7 +2081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/LAW/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/LAW/" class="md-nav__link">
         
   
   
@@ -2269,7 +2109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/PHAR/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/PHAR/" class="md-nav__link">
         
   
   
@@ -2297,7 +2137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/BME/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/BME/" class="md-nav__link">
         
   
   
@@ -2325,7 +2165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER3/BA/" class="md-nav__link">
+      <a href="../../../world/courses/TIER3/BA/" class="md-nav__link">
         
   
   
@@ -2415,7 +2255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/CL/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/CL/" class="md-nav__link">
         
   
   
@@ -2443,7 +2283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/HIS/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/HIS/" class="md-nav__link">
         
   
   
@@ -2471,7 +2311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/PHI/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/PHI/" class="md-nav__link">
         
   
   
@@ -2499,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/JOUR/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/JOUR/" class="md-nav__link">
         
   
   
@@ -2527,7 +2367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/ENG/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/ENG/" class="md-nav__link">
         
   
   
@@ -2555,7 +2395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/AGR/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/AGR/" class="md-nav__link">
         
   
   
@@ -2583,7 +2423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/TEA/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/TEA/" class="md-nav__link">
         
   
   
@@ -2611,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/AS/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/AS/" class="md-nav__link">
         
   
   
@@ -2639,7 +2479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/ENV/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/ENV/" class="md-nav__link">
         
   
   
@@ -2667,7 +2507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/PSY/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/PSY/" class="md-nav__link">
         
   
   
@@ -2695,7 +2535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/SOC/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/SOC/" class="md-nav__link">
         
   
   
@@ -2723,7 +2563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../world/courses/TIER4/GEO/" class="md-nav__link">
+      <a href="../../../world/courses/TIER4/GEO/" class="md-nav__link">
         
   
   
@@ -2771,28 +2611,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -2810,7 +2653,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2828,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/sources_dev/" class="md-nav__link">
+      <a href="../../sources_dev/" class="md-nav__link">
         
   
   
@@ -2862,10 +2705,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2874,7 +2720,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2">
         
           
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
             
   
   
@@ -2910,7 +2756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/framework/backend_framework/" class="md-nav__link">
+      <a href="../../framework/backend_framework/" class="md-nav__link">
         
   
   
@@ -2938,7 +2784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/framework/frontend_framework/" class="md-nav__link">
+      <a href="../../framework/frontend_framework/" class="md-nav__link">
         
   
   
@@ -2974,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/setup/" class="md-nav__link">
+      <a href="../../setup/" class="md-nav__link">
         
   
   
@@ -3002,7 +2848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/api/" class="md-nav__link">
+      <a href="../../api/" class="md-nav__link">
         
   
   
@@ -3027,28 +2873,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_5">
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" checked="">
         
           
-          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
             
   
   
@@ -3066,7 +2915,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3081,10 +2930,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../dev/plans/migrate_js_to_ts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJUers模拟器前端计划迁移至TypeScript
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3100,6 +2976,193 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 迁移目标与收益
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 迁移目标与收益">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 第一阶段：基础设施与基座搭建
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 第一阶段：基础设施与基座搭建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安全引入依赖
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsconfigjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基础配置文件 tsconfig.json
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-action-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 第二阶段：分层迁移策略 (Action Plan)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 第二阶段：分层迁移策略 (Action Plan)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-1-types-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1: 逻辑层 (Types Definition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2: 状态与测试层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-3-vue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3: Vue 组件层
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 常见避坑指南 (Troubleshooting)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 常见避坑指南 (Troubleshooting)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 个高频报错与对策
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#any" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于 any 的团队规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-agent-ci-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Agent 技能链调整预案 (CI Integration)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3120,7 +3183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/test/" class="md-nav__link">
+      <a href="../../test/" class="md-nav__link">
         
   
   
@@ -3209,7 +3272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         
   
   
@@ -3237,7 +3300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/faq_dev/" class="md-nav__link">
+      <a href="../../faq_dev/" class="md-nav__link">
         
   
   
@@ -3326,7 +3389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/release-notes/" class="md-nav__link">
+      <a href="../../../about/release-notes/" class="md-nav__link">
         
   
   
@@ -3354,7 +3417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/LICENSE/" class="md-nav__link">
+      <a href="../../../about/LICENSE/" class="md-nav__link">
         
   
   
@@ -3382,7 +3445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/contributing/" class="md-nav__link">
+      <a href="../../../about/contributing/" class="md-nav__link">
         
   
   
@@ -3430,85 +3493,152 @@
   
 
 
-<h1 id="_1">折姜大学校规<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<h2 id="1">1. 快速上手<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<h1 id="vue-3-javascript-typescript">Vue 3 (JavaScript) 至 TypeScript 渐进式迁移技术文档<a class="headerlink" href="#vue-3-javascript-typescript" title="Permanent link">¶</a></h1>
+<p>本文档旨在为 <code>zjus-frontend</code> 项目提供一套安全、稳健的 TypeScript (TS) 迁移方案。</p>
+<h2 id="1">1. 迁移目标与收益<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<h3 id="_1">核心价值<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
 <ul>
-<li>通过入学考试进入校园，系统会分配专业与首学期课程。</li>
-<li>在课程卡片选择“摆 / 摸 / 卷”策略，影响擅长度增长与精力消耗。</li>
-<li>每个 Tick 约 3 秒自动结算：课程进度、精力、心态、压力、随机事件。</li>
-<li>期末考试根据擅长度、心态、压力、运气给出成绩并更新 GPA。</li>
-<li>精力或心态归零会 Game Over；完成 8 学期则毕业并生成文言文总结。</li>
-</ul>
-<div class="admonition tip">
-<p>新手建议先以“摸”为主，压力过高时再切“摆”保命，避免前两学期直接崩盘。</p>
-</div>
-<h2 id="2">2. 基础设定<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
-<ul>
-<li>Tick 时长：约 3 秒；暂停时不结算，不触发事件/钉钉。</li>
-<li>学期计时：底部倒计时为当前学期剩余时间；结束后可进入下一学期。</li>
-<li>课程权重：学分越高，对总精力消耗占比越大。</li>
-<li>专业与课程：每学期自动分配，与专业课表、难度、学分相关。</li>
-</ul>
-<h2 id="3">3. 核心属性<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>精力</strong>：随课程策略结算消耗；低消耗或摆烂可小幅回血；归零即 Game Over。</li>
-<li><strong>心态</strong>：影响成长与考试；低于 50 减益，80+ 有加成；归零即 Game Over。</li>
-<li><strong>压力</strong>：40-70 为最佳区间；区间内成长/考试有加成，过低/过高减益。</li>
-<li><strong>IQ / EQ / 运气</strong>：IQ 影响学习效率；EQ 用于事件与社交；运气影响考试波动与事件。</li>
-<li><strong>声望</strong>：部分事件与成就使用。</li>
-</ul>
-<h2 id="4">4. 课程策略（三态）<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>摆 (0)</strong>：几乎不消耗精力，总消耗极低时会回少量精力并减压，但成长很慢。</li>
-<li><strong>摸 (1，默认)</strong>：均衡成长，正常消耗；受心态/压力影响成长速度。</li>
-<li><strong>卷 (2)</strong>：成长最快，精力消耗高，压力可能上升；同样受心态/压力影响。</li>
-<li>成长算法：基础成长 × 策略系数 × (1 + (IQ − 100)%) × 心态/压力修正。</li>
-</ul>
-<h2 id="5">5. 休闲与冷却<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>健身</strong>：需要较高精力（默认 ≥ 50）；消耗后大幅回精力，心态 +，压力 −。</li>
-<li><strong>开黑</strong>：小幅耗精力，心态大幅回升。</li>
-<li><strong>散步</strong>：降低压力。</li>
-<li><strong>刷 CC98</strong>：随机正/负效果，可能回血心态或增加压力。</li>
-<li>每个动作有独立冷却，冷却中会提示剩余秒数。</li>
+<li><strong>前后端类型全链路对齐</strong>：通过与后端 FastAPI (Pydantic) 模型保持一致的 Interface 定义，前端可以实时感知数据结构的变化，彻底消除“后端改字段，前端碎一地”的痛点。</li>
+<li><strong>重构信心</strong>：在修改核心逻辑（如游戏引擎状态流转）时，TS 的静态检查能瞬间指出受影响的组件。</li>
+<li><strong>IDE 智能补齐</strong>：大幅提升组件 Props、Pinia Store 状态的开发体验。</li>
 </ul>
 <hr>
-<h2 id="6-gpa">6. 期末考试与 GPA<a class="headerlink" href="#6-gpa" title="Permanent link">¶</a></h2>
-<ul>
-<li>单科分数 ≈ 擅长度 × 0.9 + 心态/压力修正 + 运气波动 + 基础分。</li>
-<li>挂科阈值读取平衡配置，低于阈值计入挂科数并扣心态。</li>
-<li>绩点 = max(分数/10 − 5, 0)，$\text{GPA} = \sum(\text{学分} \times \text{绩点}) / \text{总学分}$。</li>
-<li>全科不挂会奖励心态；考试后生成成绩单并更新最高 GPA。</li>
-</ul>
-<h2 id="7">7. 随机事件与钉钉<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
-<ul>
-<li>随机事件：按配置的间隔与概率触发，基于当前状态生成剧情；选项会改动属性（有安全上限）。</li>
-<li>钉钉消息：按间隔 + 概率推送，内容受心态/压力/GPA 影响（安慰、催促或祝贺）。</li>
-<li>已出现的随机事件标题会记录，避免短期重复。</li>
-</ul>
-<h2 id="8">8. 学期推进与毕业<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
-<ul>
-<li>完成一学期后可进入下一学期，自动分配新课表并重置擅长度。</li>
-<li>大一秋冬起计，共 8 学期；超过 8 学期则判为毕业并展示文言文总结与成就。</li>
-<li>学期切换会尝试自动存档；假期可能插入假期事件。</li>
-</ul>
-<div class="admonition tip">
-<p>学期切换前手动保存一次更稳妥，可避免断线造成的最近进度损失。</p>
-</div>
+<h2 id="2">2. 第一阶段：基础设施与基座搭建<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="_2">安全引入依赖<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>执行以下命令安装核心依赖，而不改动现有业务代码：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-D<span class="w"> </span>typescript<span class="w"> </span>vue-tsc<span class="w"> </span>@vue/tsconfig
+</code></pre></div><p></p>
+<h3 id="tsconfigjson">基础配置文件 <code>tsconfig.json</code><a class="headerlink" href="#tsconfigjson" title="Permanent link">¶</a></h3>
+<p>在项目根目录创建此文件。关键在于开启 <code>allowJs</code> 和 <code>checkJs: false</code>，确保 TS 编译器对现有 JS 文件保持宽容。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"extends"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@vue/tsconfig/tsconfig.dom.json"</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">"compilerOptions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ESNext"</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">"module"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ESNext"</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">"moduleResolution"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bundler"</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">"strict"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">"jsx"</span><span class="p">:</span><span class="w"> </span><span class="s2">"preserve"</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">"sourceMap"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">"resolveJsonModule"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">"esModuleInterop"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nt">"lib"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"ESNext"</span><span class="p">,</span><span class="w"> </span><span class="s2">"DOM"</span><span class="p">],</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">"skipLibCheck"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">"baseUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"."</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">"paths"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="nt">"@/*"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"src/*"</span><span class="p">]</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="c1">// 关键配置：允许处理现有 JS</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nt">"allowJs"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nt">"checkJs"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nt">"noEmit"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="nt">"include"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"src/**/*.ts"</span><span class="p">,</span><span class="w"> </span><span class="s2">"src/**/*.d.ts"</span><span class="p">,</span><span class="w"> </span><span class="s2">"src/**/*.tsx"</span><span class="p">,</span><span class="w"> </span><span class="s2">"src/**/*.vue"</span><span class="p">],</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">  </span><span class="nt">"exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"node_modules"</span><span class="p">,</span><span class="w"> </span><span class="s2">"dist"</span><span class="p">]</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="p">}</span>
+</code></pre></div>
 <hr>
-<h2 id="9">9. 成就与结局<a class="headerlink" href="#9" title="Permanent link">¶</a></h2>
-<ul>
-<li>成就示例：GPA ≥ 4.0、心态跌破 10、EQ ≥ 95、学习次数 50+ 等，会即时解锁提示。</li>
-<li>毕业时展示已解锁成就；失败（精力/心态归零）则进入 Game Over，可选择重开。</li>
+<h2 id="3-action-plan">3. 第二阶段：分层迁移策略 (Action Plan)<a class="headerlink" href="#3-action-plan" title="Permanent link">¶</a></h2>
+<h3 id="level-1-types-definition">Level 1: 逻辑层 (Types Definition)<a class="headerlink" href="#level-1-types-definition" title="Permanent link">¶</a></h3>
+<p><strong>Before (JS):</strong>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// src/api/game.js</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">fetchStats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'/api/stats'</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w"> </span><span class="c1">// 返回值不透明</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">};</span>
+</code></pre></div><p></p>
+<p><strong>After (TS):</strong>
+在 <code>src/types/game.ts</code> 中根据后端 Pydantic 模型定义接口：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">PlayerStats</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nx">iq</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nx">eq</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">gpa</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">energy</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nx">sanity</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nx">efficiency</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">fetchStats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">PlayerStats</span><span class="o">&gt;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'/api/stats'</span><span class="p">);</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">};</span>
+</code></pre></div><p></p>
+<h3 id="level-2">Level 2: 状态与测试层<a class="headerlink" href="#level-2" title="Permanent link">¶</a></h3>
+<p><strong>Before (JS Vitest):</strong>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">it</span><span class="p">(</span><span class="s1">'updates energy'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGameStore</span><span class="p">();</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">store</span><span class="p">.</span><span class="nx">updateEnergy</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">});</span>
+</code></pre></div><p></p>
+<p><strong>After (TS Vitest):</strong>
+利用 TS 类型强力约束测试数据：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useGameStore</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@/stores/gameStore'</span><span class="p">;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nx">it</span><span class="p">(</span><span class="s1">'updates energy'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGameStore</span><span class="p">();</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="c1">// 如果 updateEnergy 期待 number 却传了 string，TS 会立即报错</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="nx">store</span><span class="p">.</span><span class="nx">updateEnergy</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">});</span>
+</code></pre></div><p></p>
+<h3 id="level-3-vue">Level 3: Vue 组件层<a class="headerlink" href="#level-3-vue" title="Permanent link">¶</a></h3>
+<p><strong>Before (JS):</strong>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">setup</span><span class="p">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">props</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">defineProps</span><span class="p">([</span><span class="s1">'user'</span><span class="p">]);</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">energy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ref</span><span class="p">(</span><span class="mf">100</span><span class="p">);</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><p></p>
+<p><strong>After (TS):</strong>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">setup</span> <span class="na">lang</span><span class="o">=</span><span class="s">"ts"</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'vue'</span><span class="p">;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">PlayerStats</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@/types/game'</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1">// 使用宏定义类型</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">props</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">defineProps</span><span class="o">&lt;</span><span class="p">{</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">;</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1">// 为 Ref 指定类型</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">energy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ref</span><span class="o">&lt;</span><span class="nx">number</span><span class="o">&gt;</span><span class="p">(</span><span class="mf">100</span><span class="p">);</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><p></p>
+<hr>
+<h2 id="4-troubleshooting">4. 常见避坑指南 (Troubleshooting)<a class="headerlink" href="#4-troubleshooting" title="Permanent link">¶</a></h2>
+<h3 id="3">3 个高频报错与对策<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>"Cannot find module '@/xxx' or its corresponding type declarations."</strong><ul>
+<li><strong>原因</strong>：TS 无法识别 Vite 的路径别名。</li>
+<li><strong>对策</strong>：确保 <code>tsconfig.json</code> 中的 <code>compilerOptions.paths</code> 与 <code>vite.config.js</code> 中的 <code>resolve.alias</code> 完全同步。</li>
 </ul>
-<h2 id="10">10. 友好提示<a class="headerlink" href="#10" title="Permanent link">¶</a></h2>
-<ul>
-<li>保持心态 &gt; 50、压力在 40-70 区间，成长和考试都更稳。</li>
-<li>精力告急时切换“摆”，配合散步/开黑回血，避免猝死。</li>
-<li>冷却类休闲优先健身与开黑；CC98 有风险，低心态时慎点。</li>
-<li>暂停后再操作更安全，防止误触浪费精力。</li>
+</li>
+<li><strong>"Property 'xxx' does not exist on type 'never'."</strong><ul>
+<li><strong>原因</strong>：初始化变量（如 <code>const list = ref([])</code>）时未定义泛型，TS 默认为空数组且不可变更。</li>
+<li><strong>对策</strong>：显式声明为 <code>ref&lt;Item[]&gt;( [])</code>。</li>
 </ul>
-<p>版本：2026.02｜规则如有调整以游戏内最新提示为准。</p>
+</li>
+<li><strong>"Object is possibly 'null' or 'undefined'."</strong><ul>
+<li><strong>原因</strong>：严格模式下的空值检查。</li>
+<li><strong>对策</strong>：使用可选链 <code>?.</code> 或非空断言 <code>!</code>（慎用）。</li>
+</ul>
+</li>
+</ol>
+<h3 id="any">关于 <code>any</code> 的团队规范<a class="headerlink" href="#any" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>[!IMPORTANT]
+- <strong>严禁</strong>：在业务逻辑字段、API 返回值定义中使用 <code>any</code>。
+- <strong>容忍</strong>：在迁移现有陈旧复杂的 JS 方法、第三方包缺失声明文件时，短期允许使用 <code>any</code> 作为过渡。
+- <strong>强制标记</strong>：所有使用的 <code>any</code> 必须带有 <code>// TODO: [TS] fix any</code> 标记。</p>
+</blockquote>
+<hr>
+<h2 id="5-agent-ci-integration">5. Agent 技能链调整预案 (CI Integration)<a class="headerlink" href="#5-agent-ci-integration" title="Permanent link">¶</a></h2>
+<p>为了将 TS 检查纳入审查流程，我们需要对 <code>Smart Full-Stack Code Review Skill</code> 的指令进行以下微调：</p>
+<ol>
+<li><strong>新增检查命令</strong>：在流水线中增加执行 <code>vue-tsc --noEmit</code>。这可以捕捉到 ESLint 无法发现的组件间 Props 类型不匹配。</li>
+<li><strong>状态机检查</strong>：<ul>
+<li>旧命令：<code>npm run lint</code></li>
+<li>新命令：<code>npm run lint &amp;&amp; npm run type-check</code> (对应 package.json 中 <code>"type-check": "vue-tsc --noEmit"</code>)</li>
+</ul>
+</li>
+<li><strong>阈值设定</strong>：在迁移初期，允许 type-check 存在一定数量的错误（设置 <code>--max-warnings</code> 或忽略特定目录），防止因为个别类型报错阻塞整个 CI。</li>
+</ol>
 
 
 
@@ -3547,7 +3677,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../notice/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 折姜大学招生减章">
+          <a href="../../api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API文档">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -3557,20 +3687,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                折姜大学招生减章
+                API文档
               </div>
             </div>
           </a>
         
         
           
-          <a href="../online_guide/" class="md-footer__link md-footer__link--next" aria-label="Next: 在线游戏">
+          <a href="../../test/" class="md-footer__link md-footer__link--next" aria-label="Next: 测试">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                在线游戏
+                测试
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3608,10 +3738,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.integrate", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.integrate", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
