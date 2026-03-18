@@ -82,6 +82,8 @@ nav:
       - 前端: dev/framework/frontend_framework.md
     - 开发环境搭建: dev/setup.md
     - API文档: dev/api.md
+    - 开发计划:
+      - ZJUers模拟器前端计划迁移至TypeScript: dev/plans/migrate_js_to_ts.md
     - 测试: dev/test.md
   - 常见问题: 
     - 玩家常见问题: faq.md
