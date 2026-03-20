@@ -1,5 +1,8 @@
 # 产品文档项目
 
+## **⚠️注意！该仓库已经暂时弃用，所有文档和CI/CD流程全部迁移至[代码主仓库](https://github.com/pirate-608/ZJUers_simulator)!**
+## **请不要再向该仓库提交任何内容！**
+
 这是 ZJUers_simulator 用户手册的源代码仓库。文档站点通过 MkDocs 构建，并自动部署到 GitHub Pages。
 
 ## 🚀 快速开始
@@ -12,8 +15,8 @@
 ### 本地开发与预览
 1.  **克隆仓库**:
     ```bash
-    git clone https://github.com/your-org/your-docs-repo.git
-    cd your-docs-repo
+    git clone https://github.com/pirate-608/ZJUers_simulator-docs.git
+    cd ZJUers_simulator-docs
     ```
 2.  **安装依赖**:
     ```bash
@@ -27,7 +30,7 @@
 
 ## 📁 项目结构
 ```
-your-docs-repo/
+ZJUers_simulator-docs/
 ├── docs/                    # 所有文档内容（.md文件）
 ├── .github/workflows/      # CI/CD 自动化部署配置
 │   └── deploy.yml
@@ -47,6 +50,24 @@ your-docs-repo/
     ````
 *   图片等静态资源请放在 `docs/assets/` 目录，并使用相对路径引用：`![描述](assets/image.png)`。
 
+## 内容同步
+
+如需将本地的代码仓库中的文档内容同步到文档仓库，只需将两者放在统一目录下，如：
+
+```
+projects
+├── ZJUers_simulator
+└── ZJUers_simulator-docs
+```
+
+然后在scripts/sync_config.json中配置好`project_dir`, `source_folder`和`target_folder`
+
+在代码仓库根目录执行
+```bash
+python scripts/sync_docs.py
+```
+
+
 ## 🔄 发布流程
 文档发布已实现**全自动化**：
 1.  将更改推送（`git push`）到 `main` 分支。
@@ -56,7 +77,7 @@ your-docs-repo/
 > **重要**：切勿手动修改 `gh-pages` 分支。
 
 ## 🌐 站点信息
-*   **线上地址**：[https://docs.yourdomain.com](https://docs.yourdomain.com)
+*   **线上地址**：[https://zjusim-docs.67656.fun](https://zjusim-docs.67656.fun)
 *   **GitHub Pages 设置**：在仓库的 **Settings > Pages** 中查看。
 *   **自定义域名**：通过根目录的 `CNAME` 文件管理。
 

@@ -4,6 +4,7 @@ site_url: https://docs.67656.fun
 dev_addr: '127.0.0.1:8080'
 repo_url: https://github.com/pirate-608/ZJUers_simulator
 repo_name: GitHub
+edit_uri: edit/main/docs/
 
 # 1. 导航菜单
 nav:
@@ -82,8 +83,10 @@ nav:
       - 前端: dev/framework/frontend_framework.md
     - 开发环境搭建: dev/setup.md
     - API文档: dev/api.md
-    - 开发计划:
+    - 开发计划: 
+      - 总览: dev/plans/index.md
       - ZJUers模拟器前端计划迁移至TypeScript: dev/plans/migrate_js_to_ts.md
+      - UI设计优化: dev/plans/ui_design.md
     - 测试: dev/test.md
   - 常见问题: 
     - 玩家常见问题: faq.md
@@ -113,6 +116,7 @@ theme:
     - search.highlight
     - search.share
     - navigation.footer
+    - content.action.edit  # 显示编辑按钮 [citation:3][citation:8]
   palette:
     - scheme: default
       primary: indigo
@@ -138,6 +142,7 @@ extra_css:
   - assets/css/custom-cards.css
   - assets/css/theme-tweaks.css
   - assets/css/fix-footer.css
+  - assets/css/todo-list.css
 
 # 3. 插件（必需项！）
 plugins:
@@ -168,5 +173,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.keys
   - pymdownx.tilde  # 支持删除线 ~~text~~
+  - pymdownx.tasklist:
+      custom_checkbox: true  # 这会让复选框看起来更美观
   - toc:
       permalink: true
